@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void mostrarpalavras (const char *str) {
+    int i;
+
+    for (i=0; str[i] != '\0'; i++) {
+        printf("%c", str[i]);
+        if (str[i] == ' ')
+            printf("\n");
+    }
+}
+
+int main () {
+    char frase [100];
+
+    printf("Digite a frase: ");
+    fgets (frase, 100, stdin);
+
+    mostrarpalavras(frase);
+
+    return 0;
+}
