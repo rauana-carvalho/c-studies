@@ -29,7 +29,7 @@ int EquipeVencedora(Equipe C[]) {
     for (i=0; i<MAX; i++){
         if(C[i].pontos > maior) {
             maior = C[i].pontos;
-            im = 1;
+            im = i;
         }
     }
     return im;
