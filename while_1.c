@@ -2,12 +2,11 @@
 #include <locale.h>
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
 
     int n, soma = 0, q = 0, qn = 0, menor, maior;
     float media;
 
-    printf("Digite um número, 0 para finalizar: ");
+    printf("Digite um numero, 0 para finalizar: ");
     scanf("%d", &n);
 
     maior = menor = n;
@@ -24,18 +23,17 @@ int main() {
         if (n<0)
             qn++;
 
-        printf("Digite outro número, 0 para finalizar: ");
+        printf("Digite outro numero, 0 para finalizar: ");
         scanf("%d", &n);
     }
-        printf("\nSoma dos números = %d\n", soma);
+        printf("\nSoma dos numeros = %d\n", soma);
         media = (float) soma / q;
-        printf("Média dos números = %.2f\n", media);
+        printf("Media dos numeros = %.2f\n", media);
 
-        printf("O maior número é = %d, O menor número é = %d\n", maior, menor);
+        printf("O maior numero eh = %d, O menor número é = %d\n", maior, menor);
         printf("Quantidade de números negativos é: %d", qn);
 
 
 
     return 0;
 }
-
